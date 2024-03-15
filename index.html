@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>JavaScript Code Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p id="results-link">
+          <a href="#" id="display-scores">Click</a> to view previous player
+          scores.
+        </p>
+
+        <div class="timer" id="count-down">
+          Time: <span id="time-clock">00</span> seconds
+        </div>
+      </header>
+      <main>
+        <section class="home" id="home-container">
+          <h1>Simple JavaScript Quiz</h1>
+          <p id="introduction">
+            This is a multiple choice quiz about JavaScript.
+          </p>
+          <button class="button-start" id="start-btn" onclick="startQuiz()">
+            Click to start
+          </button>
+        </section>
+
+        <div class="quiz-container">
+          <section>
+            <h2 id="question">Questions</h2>
+            <div id="answer-buttons">
+              <button id="btn1"></button>
+              <button id="btn2"></button>
+              <button id="btn3"></button>
+              <button id="btn4"></button>
+            </div>
+            <button id="next-btn">Next</button>
+          </section>
+        </div>
+
+        <section class="results" id="results-container">
+          <h3>Quiz Complete</h3>
+          <p>Time to complete quiz: <span id="score">000</span></p>
+          <form id="init-form">
+            <input type="text" id="initialId" placeholder="Type here" />
+            <input type="submit" id="submitInitBtn" value="Submit" />
+          </form>
+        </section>
+      </main>
+
+
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

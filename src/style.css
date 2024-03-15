@@ -1,0 +1,112 @@
+/*   Root variables   */
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;    
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #20004d;
+    --second-color: blueviolet;
+    --correct: #9aea9a;
+    --incorrect: #ff9393;
+}
+
+body {
+    background: #fff;
+}
+
+.container {
+    background: white;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    margin: 100px auto 0;
+    max-width: 600px;
+    padding: 30px;
+    width: 90%;
+}
+
+.container h1 {
+    color:#20004d;
+    border-bottom: 2px solid ;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 18px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Class styling for questions and buttons */
+
+.btn {
+    background: white;
+    border-radius: 8px;
+    color: var(--second-color);
+    cursor: pointer;
+    font-weight: 500;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+    transition: all 0.1s;
+    width: 100%;
+}
+
+/* Styling to make sure hover effect will work when the button is not DISABLED */
+.btn:hover:not([disabled]) {
+    background: var(--main-color);
+    box-shadow: 5px 5px lightgrey;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+/* ID styling */
+
+#next-btn  {
+    background: var(--second-color);
+    color: #fff;
+    cursor: pointer;
+    display: hidden; /* until quiz begins */
+    width: 150px;
+    border-radius: 6px; 
+    font-weight: 475;
+    margin: 18px auto 0;
+    padding: 12px;
+    text-align: center;
+    transition: all 0.1s;
+}
+
+#start-btn {
+    background: var(--second-color);
+    color: #fff;
+    cursor: pointer;
+    display: hidden; /* until quiz begins */
+    width: 160px;
+    border-radius: 6px; 
+    font-weight: 475;
+    margin: 18px auto 0;
+    padding: 12px;
+    text-align: center;
+    transition: all 0.1s;
+}
+
+
+/* style for the correct and incorrect answer */
+.correct {
+    background: var(--correct);
+}
+
+.incorrect {
+    background: var(--incorrect);
+}
